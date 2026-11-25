@@ -1,0 +1,201 @@
+/* Adapted from the supplied jemdoc stylesheet. */
+:root {
+  color-scheme: light;
+  background: #eeeeee;
+  color: #20242a;
+  font-family: Georgia, "Noto Serif CJK SC", "Songti SC", SimSun, serif;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: min(calc(100% - 2rem), 64rem);
+  margin: 1.25rem auto;
+  background: #ffffff;
+}
+
+#layout-content {
+  padding: 2rem clamp(1.25rem, 5vw, 4rem) 2.75rem;
+}
+
+a {
+  color: #224b8d;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: #12336b;
+}
+
+a:focus-visible {
+  outline: 2px solid #224b8d;
+  outline-offset: 3px;
+}
+
+#toptitle {
+  margin-bottom: 1.3rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 3px double #7b8797;
+}
+
+h1, h2, h3 {
+  color: #355e9c;
+  line-height: 1.25;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.9rem, 4vw, 2.55rem);
+}
+
+h1 span {
+  font-size: 0.76em;
+  margin-inline-start: 0.15em;
+}
+
+h2 {
+  margin: 1.85rem 0 0.65rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #aab4c1;
+  font-size: 1.3rem;
+}
+
+h3 {
+  margin: 1.45rem 0 0.6rem;
+  font-size: 1.12rem;
+}
+
+p {
+  margin: 0 0 0.7rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 4vw, 2rem);
+}
+
+.portrait {
+  display: block;
+  width: clamp(7rem, 19vw, 10rem);
+  height: auto;
+}
+
+.profile-info {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.profile-info p:last-child {
+  margin-bottom: 0;
+}
+
+.position {
+  font-size: 1.12rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.15rem;
+  margin-top: 1.1rem;
+  font-size: 0.95rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin: 0;
+  padding-inline-start: 1.3rem;
+  list-style-type: square;
+}
+
+li + li {
+  margin-top: 0.3rem;
+}
+
+.publication-note, .paper-venue {
+  color: #4c5664;
+  font-size: 0.94rem;
+}
+
+.publications li + li {
+  margin-top: 0.85rem;
+}
+
+.paper-title {
+  font-weight: bold;
+}
+
+.paper-authors, .paper-venue {
+  display: block;
+}
+
+.paper-code {
+  display: inline-block;
+  margin-inline-start: 0.5em;
+}
+
+.funding-entry {
+  margin-top: 1.15rem;
+  padding: 0.85rem 1rem;
+  border-inline-start: 3px solid #355e9c;
+  background: #f2f6fc;
+}
+
+.funding-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  column-gap: 1rem;
+  row-gap: 0.25rem;
+  margin-bottom: 0.45rem;
+}
+
+.funding-heading h3 {
+  flex: 1 1 24rem;
+  margin: 0;
+}
+
+.funding-amount {
+  color: #224b8d;
+  white-space: nowrap;
+}
+
+.funding-details {
+  margin-bottom: 0;
+  color: #4c5664;
+  font-size: 0.94rem;
+}
+
+@media (max-width: 38rem) {
+  body {
+    width: 100%;
+    margin: 0;
+  }
+
+  #layout-content {
+    padding-top: 1.35rem;
+  }
+}
+
+@media (max-width: 24rem) {
+  .profile {
+    align-items: flex-start;
+  }
+
+  .portrait {
+    width: 5.25rem;
+  }
+}
